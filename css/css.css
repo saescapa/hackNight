@@ -1,4 +1,21 @@
-body {
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.outbox {
+  width: 100%;
+  height: 100%;
   background-color: red; }
+
+.inbox {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: blue; }
+
+.top .title {
+  font-family: 'Didact Gothic', sans-serif; }
 
 /*# sourceMappingURL=css.css.map */
