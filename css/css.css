@@ -29,7 +29,16 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.top .title {
-  font-family: 'Didact Gothic', sans-serif; }
+.top .inbox {
+  background-color: rgba(255, 255, 255, 0);
+  height: auto; }
+  .top .inbox .title {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 10em;
+    text-align: center; }
+  .top .inbox .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    text-align: center; }
 
 /*# sourceMappingURL=css.css.map */
