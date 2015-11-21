@@ -4,18 +4,30 @@ html, body {
   padding: 0;
   margin: 0; }
 
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(170, 0, 0, 0.8) 0%, rgba(255, 114, 66, 0.8) 100%); }
+
 .outbox {
   width: 100%;
   height: 100%;
-  background-color: red; }
+  position: relative; }
 
 .inbox {
   width: 80%;
   height: 90%;
   margin: 0 auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: blue; }
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .top .title {
   font-family: 'Didact Gothic', sans-serif; }

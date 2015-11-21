@@ -1,21 +1,7 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/css.css">
-  </head>
-  <body>
-    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-
-
-
-    <link rel="stylesheet" href="circle/css/normalize.css">
-
-
-        <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      html {
-  background: radial-gradient(ellipse, #1b2735 0%, #090a0f 100%);
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
 }
 
 #stars {
@@ -69,6 +55,26 @@
   box-shadow: 1695px 1879px #FFF , 1823px 623px #FFF , 1537px 1652px #FFF , 103px 824px #FFF , 1297px 304px #FFF , 1447px 1325px #FFF , 1372px 908px #FFF , 880px 234px #FFF , 1649px 1698px #FFF , 217px 547px #FFF , 1697px 68px #FFF , 571px 1488px #FFF , 100px 1813px #FFF , 1780px 1173px #FFF , 1962px 378px #FFF , 891px 1851px #FFF , 585px 174px #FFF , 819px 248px #FFF , 1840px 374px #FFF , 1495px 1644px #FFF , 53px 312px #FFF , 599px 1495px #FFF , 1401px 569px #FFF , 614px 1453px #FFF , 669px 916px #FFF , 498px 1334px #FFF , 1008px 374px #FFF , 190px 469px #FFF , 564px 1932px #FFF , 1688px 1758px #FFF , 655px 1669px #FFF , 1985px 254px #FFF , 786px 1155px #FFF , 239px 694px #FFF , 1923px 1349px #FFF , 1582px 1172px #FFF , 477px 461px #FFF , 544px 809px #FFF , 426px 1888px #FFF , 979px 1510px #FFF , 205px 1946px #FFF , 475px 293px #FFF , 1822px 1609px #FFF , 1633px 1418px #FFF , 76px 1022px #FFF , 806px 1257px #FFF , 275px 1756px #FFF , 1941px 1034px #FFF , 1038px 586px #FFF , 1533px 801px #FFF , 1738px 1940px #FFF , 884px 624px #FFF , 938px 1313px #FFF , 855px 1505px #FFF , 1202px 1794px #FFF , 1014px 210px #FFF , 1484px 1903px #FFF , 1649px 193px #FFF , 495px 791px #FFF , 1107px 619px #FFF , 1701px 364px #FFF , 694px 355px #FFF , 1553px 1486px #FFF , 15px 1208px #FFF , 1533px 4px #FFF , 1917px 1761px #FFF , 2px 79px #FFF , 738px 1831px #FFF , 931px 230px #FFF , 1468px 294px #FFF , 48px 1608px #FFF , 1975px 1401px #FFF , 1598px 749px #FFF , 111px 945px #FFF , 1191px 1389px #FFF , 1930px 312px #FFF , 1621px 602px #FFF , 361px 314px #FFF , 915px 1569px #FFF , 1007px 1710px #FFF , 485px 1101px #FFF , 1314px 1583px #FFF , 1442px 164px #FFF , 563px 65px #FFF , 620px 1117px #FFF , 1148px 465px #FFF , 1902px 844px #FFF , 1766px 932px #FFF , 398px 346px #FFF , 1621px 1819px #FFF , 282px 733px #FFF , 1050px 1042px #FFF , 1862px 978px #FFF , 1038px 1044px #FFF , 1701px 620px #FFF , 827px 1887px #FFF , 1772px 1261px #FFF , 929px 136px #FFF , 917px 1373px #FFF , 1852px 323px #FFF;
 }
 
+#title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -77,43 +83,3 @@
     transform: translateY(-2000px);
   }
 }
-
-    </style>
-
-
-        <script src="circle/js/prefixfree.min.js"></script>
-
-
-  </head>
-
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <div class="background">
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
-    </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-        <script src="circle/js/index.js"></script>
-    <div class="outbox top">
-      <div class="inbox">
-        SM Hacks
-      </div>
-    </div>
-    <div class="outbox content">
-      <div class="inbox">
-        Content
-      </div>
-    </div>
-    <div class="outbox content">
-      <div class="inbox">
-        Content
-      </div>
-    </div>
-    <div class="outbox bottom">
-      <div class="inbox">
-        Bottom
-      </div>
-    </div>
-  </body>
-</html>
