@@ -4,33 +4,48 @@ html, body {
   padding: 0;
   margin: 0; }
 
+body {
+  background-color: black; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
 .background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 9;
   background: linear-gradient(to bottom, rgba(170, 0, 0, 0.8) 0%, rgba(255, 114, 66, 0.8) 100%); }
 
 .outbox {
   width: 100%;
-  height: 100%;
-  position: relative; }
+  min-height: 100%;
+  padding-top: 2.75%;
+  padding-bottom: 2.75%;
+  position: relative;
+  background-color: transparent;
+  z-index: 10; }
 
 .inbox {
   width: 80%;
-  height: 90%;
+  min-height: 90%;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  z-index: 100; }
 
 .top .inbox {
   background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 0;
+  transform: translate(-50%, -50%);
   height: auto; }
   .top .inbox .title {
     font-family: 'Didact Gothic', sans-serif;
@@ -40,5 +55,54 @@ html, body {
     font-family: 'Lato', sans-serif;
     font-size: 3em;
     text-align: center; }
+
+.info {
+  background-color: #4271ff; }
+  .info .inbox {
+    background-color: transparent; }
+    .info .inbox .letsbuild {
+      font-weight: 900;
+      font-size: 120px;
+      color: white;
+      text-shadow: -4px 4px black;
+      text-transform: uppercase;
+      font-family: 'Late', sans-serif; }
+      .info .inbox .letsbuild p {
+        line-height: 120px;
+        margin: 0; }
+      .info .inbox .letsbuild .scroll {
+        height: 120px;
+        overflow: hidden; }
+        .info .inbox .letsbuild .scroll .words {
+          animation: 8s normal infinite running scroll; }
+      .info .inbox .letsbuild .rest .number {
+        color: #ff4271; }
+
+.about {
+  background-color: #42ff72; }
+
+@keyframes scroll {
+  0% {
+    margin-top: 0px; }
+  15% {
+    margin-top: 0px; }
+  17% {
+    margin-top: -120px; }
+  32% {
+    margin-top: -120px; }
+  34% {
+    margin-top: -240px; }
+  49% {
+    margin-top: -240px; }
+  51% {
+    margin-top: -360px; }
+  66% {
+    margin-top: -360px; }
+  68% {
+    margin-top: -480px; }
+  83% {
+    margin-top: -480px; }
+  100% {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=css.css.map */
